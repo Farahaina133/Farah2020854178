@@ -1,0 +1,92 @@
+<html>
+<head>
+<link href="Assest/Css/Profile.css" 
+rel="stylesheet">
+<title>HOME PAGE</title>
+</head>
+<body background="Assest/Image/Background.jpg">
+
+
+<div class="header">
+<marquee>
+  <h1>WELCOME TO MY PERSONAL WEBSITE</h1>
+</div>
+</marquee>
+
+<div class="navbar">
+  <a href="Biodata.html" target="_blank">BIODATA</a>
+  <a href="Family.html" target="_blank">FAMILY</a>
+  <a href="Education.html" target="_blank" >EDUCATION</a>
+  <a href="Experience.html" target="_blank" class="right">EXPERIENCE</a>
+  <a href="Gallery.html" target="_blank" class="right">GALLERY</a>
+</div>
+
+
+<div class="main">
+    <h2>FARAH AINA PERSONAL WEBSITE</h2>
+
+<br><br><br>
+
+<audio controls>
+
+<source src="Assest/Audio/All The Kids Are Depressed.mp3" type="audio/mp3">
+
+</audio>
+</center> 
+
+<center> 
+<div id="clock">8:10:45</div> 
+</center> 
+ 
+<script src="clock2.js"> </script>
+ 
+ 
+<script>
+       setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            am_pm = "AM";
+ 
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+ 
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+ 
+            let currentTime = hour + ":"
+                + min + ":" + sec + am_pm;
+ 
+            document.getElementById("clock")
+                .innerHTML = currentTime;
+        }
+ 
+        showTime();
+</script>
+
+<video width="60%" height="60%" controls loop muted autoplay>
+<source src="Assest/Video/Farah_video.mp4" type="video/mp4">
+</video>
+
+<br><br>
+
+<a href="https://www.instagram.com/_ferakim/" target="_blank"> <img src="Assest/Image/Ig.png" width="50px" height="50px"> </a>
+<br><br>
+<a href="https://www.tiktok.com/@ferakim?lang=en" target="_blank"> <img src="Assest/Image/Tiktok.png" width="50px" height="50px"> </a>
+</div>
+
+<div class="footer">
+  <h2>LIFE GETS BETTER ONCE YOU STOP THINKING WHAT PEOPLE THINK ABOUT YOU</h2>
+</div>
+
+</body>
+</html>

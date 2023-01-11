@@ -1,0 +1,188 @@
+<html>
+<head>
+<link href="Assest/Css/Slideshow.css" 
+rel="stylesheet">
+<title>GALLERY</title>
+</head>
+<body background="Assest/Image/Cloud.jpg">
+<a name="First_Anchor"> </a>
+
+<center>
+<br><br>
+<div class="row">
+  <div class="side">
+    <h2>GALLERY</h2>
+
+
+<br><br><br>
+
+<audio controls>
+
+<source src="Assest/Audio/Dandelions.mp3" type="audio/mp3">
+
+</audio>
+</center> 
+
+
+<br><br><br>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="MY PARENTS">1 / 15</div>
+ <center> <img src="Assest/Image/pic1.jpg" style="width:70%;height:70%px"> </center>
+  <div class="text">MY FRIENDS AND ME</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="MY PARENTS AND ME" >2 / 15</div>
+  <center> <img src="Assest/Image/pic2.jpg" style="width:70%;height:70%px"> </center>
+  <div class="text"> MY FRIENDS AND ME  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="MY FAMILY">3 / 15</div>
+  <center> <img src="Assest/Image/pic3.jpg" style="width:70%;height:70%px"> </center>
+  <div class="text">MY FRIEND AND ME </div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="MY FAMILY">4 / 15</div>
+  <center> <img src="Assest/Image/pic4.jpg" style="width:70%;height:70%px"> </center>
+  <div class="text">MY FRIEND AND ME </div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="MY FAMILY">5 / 15</div>
+  <center> <img src="Assest/Image/pic5.jpg" style="width:70%;height:70%px"> </center>
+  <div class="text">MY FRIEND AND ME </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="MY FAMILY">6 / 15</div>
+  <center> <img src="Assest/Image/pic6.jpg" style="width:70%;height:70%px"> </center>
+  <div class="text">MY BOYFRIEND AND ME </div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="MY FAMILY">7 / 15</div>
+  <center> <img src="Assest/Image/pic7.jpg" style="width:70%;height:70%px"> </center>
+  <div class="text">MY CLASSMATE </div>
+</div>
+
+
+
+<div class="mySlides fade">
+  <div class="MY FAMILY">8 / 15</div>
+  <center> <img src="Assest/Image/pic8.jpg" style="width:70%;height:70%px"> </center>
+  <div class="text">MY CLASSMATE </div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="MY FAMILY">9 / 15</div>
+  <center> <img src="Assest/Image/pic9.jpg" style="width:70%;height:70%px"> </center>
+  <div class="text">MY FRIEND AND ME </div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="MY FAMILY">10 / 15</div>
+  <center> <img src="Assest/Image/pic10.jpg" style="width:70%;height:70%px"> </center>
+  <div class="text">MY BOYFRIEND AND ME </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="MY FAMILY">11 / 15</div>
+  <center> <img src="Assest/Image/pic11.jpg" style="width:70%;height:70%px"> </center>
+  <div class="text">MY FRIEND AND ME </div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="MY FAMILY">12 / 15</div>
+  <center> <img src="Assest/Image/pic12.jpg" style="width:70%;height:70%px"> </center>
+  <div class="text">MY FRIEND AND ME </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="MY FAMILY">13 / 15</div>
+  <center> <img src="Assest/Image/pic13.jpg" style="width:70%;height:70%px"> </center>
+  <div class="text">MY FAMILY </div>
+</div>
+<div class="mySlides fade">
+  <div class="MY FAMILY">14 / 15</div>
+  <center> <img src="Assest/Image/pic14.jpg" style="width:70%;height:70%px"> </center>
+  <div class="text">MY FAMILY </div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="MY FAMILY">15 / 15</div>
+  <center> <img src="Assest/Image/pic15.jpg" style="width:70%;height:70%px"> </center>
+  <div class="text">MY MOM AND ME </div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+  <span class="dot" onclick="currentSlide(11)"></span>
+  <span class="dot" onclick="currentSlide(12)"></span>
+  <span class="dot" onclick="currentSlide(13)"></span>
+  <span class="dot" onclick="currentSlide(14)"></span>
+  <span class="dot" onclick="currentSlide(15)"></span>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<br><br><br>
+<a href="#First_Anchor">GO TO TOP PAGE</a>
+
+
+</body>
+</html>

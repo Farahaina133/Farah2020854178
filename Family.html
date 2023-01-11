@@ -1,0 +1,144 @@
+<html>
+<head>
+<link href="Assest/Css/Slideshow.css" 
+rel="stylesheet">
+<title> FAMILY </title>
+</head>
+<body background="Assest/Image/Cloud.jpg">
+
+<a name="First_Anchor"> </a>
+<br><br><br> 
+
+
+<center>
+
+<div class="row">
+  <div class="side">
+    <h2> MY FAMILY </h2>
+
+<br>
+
+<pre>    " A family is defined as a group of two or more people who 
+
+            are related to one another through birth, marriage, 
+
+             or a doption and who live together " 
+</pre>
+
+</center>
+
+<br>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="MY PARENTS">1 / 3</div>
+ <center> <img src="Assest/Image/Parents.jpg" style="width:70%;height:70%px"> </center>
+  <div class="text">MY PARENTS</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="MY PARENTS AND ME" >2 / 3</div>
+  <center> <img src="Assest/Image/Me.jpg" style="width:70%;height:70%px"> </center>
+  <div class="text"> MY PARENTS AND ME  </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="MY FAMILY">3 / 3</div>
+  <center> <img src="Assest/Image/Family.jpg" style="width:70%;height:70%px"> </center>
+  <div class="text">MY FAMILY </div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+<br><br><br><br><br> 
+
+<center>
+<table>
+  <tr>
+    <th>NAME</th>
+    <th>RELATIONSHIP</th>
+    <th>AGE</th>
+  </tr>
+
+  <tr>
+    <td>ABU HASAN BIN MD YUSOFF</td>
+    <td>FATHER</td>
+    <td>52</td>
+  </tr>
+
+  <tr>
+    <td>ROZIHAN BINTI MAT NOR</td>
+    <td>MOTHER</td>
+    <td>50</td>
+  </tr>
+
+  <tr>
+    <td>NUR IZZATI BINTI ABU HASAN</td>
+    <td>SISTER</td>
+    <td>26</td>
+  </tr>
+
+  <tr>
+    <td>NUR HAFIZZA BINTI ABU HASAN</td>
+    <td>SISTER</td>
+    <td>25</td>
+  </tr>
+  <tr>
+    <td>NUR ALEESYA SOFIA BINTI ABU HASAN</td>
+    <td>YOUNGER SISTER</td>
+    <td>13</td>
+  </tr>
+
+</table>
+</center>
+
+
+<br><br><br>
+<a href="#First_Anchor">GO TO TOP PAGE</a>
+
+</body>
+</html>
